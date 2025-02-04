@@ -210,7 +210,7 @@ bindsym Shift+Print exec flameshot full
 
 # keybinding for screen lock
 # bindsym Control+Mod1+l "exec convert ~/Pictures/Wallpapers/fuck_windows.jpg  RGB:- | i3lock --raw 1080x607:rgb --image /dev/stdin"
-bindsym Control+Mod1+l "exec i3lock --image ~/Pictures/Wallpapers/fuck_windows.png -p win -u -f -t"
+bindsym Control+Mod1+l "exec i3lock --image-fill ~/Pictures/Wallpapers/fuck_windows.png -p win"
 
 # for auto screenlocking
 # exec xautolock -detectsleep -time 10 -locker \"i3lock -c 000000 \"
@@ -221,6 +221,3 @@ exec --no-startup-id "sudo libinput-gestures-setup start"
 
 # keybinding for calculator
 bindsym XF86Calculator "exec galculator"
-exec setxkbmap -option caps:escape
-exec xmodmap -e "keycode 66 = Caps_Lock Control_L"
-
